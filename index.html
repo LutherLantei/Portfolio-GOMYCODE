@@ -3,108 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Luther Lantei Portfolio</title>
+
+    <!-- Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <header>
-      <h1>LUTHER LANTEI</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#my-projects">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="main-title">LUTHER LANTEI</h1>
+      <p class="subtitle">Calm • Refined • Minimal</p>
     </header>
-    <hr />
- <section id="learning-video">
-  <h2>Web Development Crash Course</h2>
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/qz0aGYrrlhU" 
-    title="Web Development Crash Course" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</section>
 
-    </p>
-    <h2>Contact Information</h2>
-    <hr />
-    <p>
-      Email:
-      <a href="mailto:letoyalantei@gmail.com"
-        >Email Me @ letoyalantei@gmail.com</a
-      >
-    </p>
-    <section id="contact-info">
-    <p>Phone: <a href="tel:+254791558382">+254 791 558 382</a></p>
-    <p>
-      Location:
-      <a href="https://www.google.com/maps?q=Nairobi,+Kenya" target="_blank">
-        Nairobi, Kenya
-      </a>
-   
-      Instagram:
-      <a href="https://instagram.com/l.xuther" target="_blank">@l.xuther</a>
-    </p>
+    <!-- VIDEO -->
+    <section id="learning-video" class="card">
+      <h2 class="section-title">Web Development Crash Course</h2>
+      <iframe
+        src="https://www.youtube.com/embed/qz0aGYrrlhU"
+        allowfullscreen
+      ></iframe>
     </section>
-    <section id="about-me">
-      </body>
 
-      <h2>About Me</h2>
-      <hr />
+    <!-- CONTACT INFO -->
+    <section id="contact-info" class="card">
+      <h2 class="section-title">Contact Information</h2>
       <p>
-        Hi my name is Luther Lantei. I am a leader and an all-round student with a
-        strong passion for technology and engineering. I thrive in collaborative
-        environments, enjoy problem-solving, and am committed to continuous
-        learning. My goal is to combine my software development skills with
-        engineering expertise to create innovative solutions for the future.
+        Email:
+        <a href="mailto:letoyalantei@gmail.com">letoyalantei@gmail.com</a>
+      </p>
+      <p>Phone: <a href="tel:+254791558382">+254 791 558 382</a></p>
+      <p>
+        Location:
+        <a href="https://www.google.com/maps?q=Nairobi,+Kenya" target="_blank"
+          >Nairobi, Kenya</a
+        >
+      </p>
+      <p>
+        Instagram:
+        <a href="https://instagram.com/l.xuther" target="_blank">@l.xuther</a>
       </p>
     </section>
-    <section id="my-projects">
-      <h2>SKILLS</h2>
-      <hr />
-    
-      <ul>
+
+    <!-- ABOUT -->
+    <section id="about-me" class="card">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Hi my name is Luther Lantei. I am a leader and an all-round student with
+        a strong passion for technology and engineering. I thrive in
+        collaborative environments and enjoy problem-solving.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="my-projects" class="card">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
         <li>JavaScript</li>
         <li>Python</li>
         <li>HTML/CSS</li>
       </ul>
     </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <hr />
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="card">
+      <h2 class="section-title">Contact Me</h2>
       <form
-    action="mailto:letoyalantei@gmail.com"
-    method="post"
-    enctype="text/plain"
-  >
-    <table>
-      <tr>
-        <td><label for="name">Name:</label></td>
-        <td><input type="text" id="name" name="name" required /></td>
-      </tr>
-      <tr>
-        <td><label for="email">Email:</label></td>
-        <td><input type="email" id="email" name="email" required /></td>
-      </tr>
-      <tr>
-        <td><label for="message">Message:</label></td>
-        <td>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="30"
-            required
-          ></textarea>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center">
-          <button type="submit">Send</button>
-        </td>
-      </tr>
-    </table>
-  </form>
-  <section>
-    <footer>
-      <p> &copy; 2026 Luther Lantei. All rights reserved.</p>
+        class="contact-form"
+        action="mailto:letoyalantei@gmail.com"
+        method="post"
+      >
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2026 Luther Lantei. All rights reserved.</p>
     </footer>
-  </section>
-  <body>
+  </body>
 </html>
